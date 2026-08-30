@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "orbit",
+  "owner": {
+    "name": "Silvio Clécio"
+  },
+  "description": "Orbit marketplace: a small, secure, generic orchestration plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "orbit",
+      "source": "./claude",
+      "description": "Orchestration for Claude Code. /orbit:cycle owns a task end to end (understand, investigate, implement, test, review, finish) with native subagent routing, automatic local Graphify code-graph orientation, strict requirement coverage, and concise output."
+    }
+  ]
+}

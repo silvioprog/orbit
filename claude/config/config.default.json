@@ -1,0 +1,10 @@
+{
+  "graphify": { "enabled": true },
+  "coverage": { "requireNewCode": false },
+  "roles": {
+    "exploration": "haiku",
+    "implementation": "sonnet",
+    "review": "sonnet",
+    "skill": "sonnet"
+  }
+}

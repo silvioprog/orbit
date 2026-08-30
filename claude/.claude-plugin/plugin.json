@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "orbit",
+  "displayName": "Orbit",
+  "description": "Small, secure, generic orchestration. /orbit:cycle owns a task end to end with native subagent routing, automatic local Graphify orientation, strict requirement coverage, and concise output.",
+  "author": {
+    "name": "Silvio Clécio"
+  },
+  "homepage": "https://github.com/silvioprog/orbit",
+  "repository": "https://github.com/silvioprog/orbit",
+  "keywords": ["orchestration", "subagents", "routing", "graphify", "workflow"],
+  "license": "MIT"
+}

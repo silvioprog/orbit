@@ -1,0 +1,71 @@
+{
+  "hooks": {
+    "UserPromptExpansion": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" user-prompt-expansion",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" permission-request",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" pre-tool-use",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PermissionDenied": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" permission-denied",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" stop",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "CLAUDE_PLUGIN_DATA=\"${CLAUDE_PLUGIN_DATA}\" sh \"${CLAUDE_PLUGIN_ROOT}/bin/orbit-guard.sh\" session-end",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
